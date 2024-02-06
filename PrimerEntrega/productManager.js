@@ -50,19 +50,19 @@ class ProductManager {
   // Pruebas
   const productManager = new ProductManager();
   
-  // getProducts al inicio, debe devolver un arreglo vacío Este codigo devuelve el arreglo vacio
+  //Este codigo devuelve el arreglo vacio
   console.log("Productos al inicio:", productManager.getProducts());
   
-  // addProduct con nuevos campos Añade nuevo propdcuto
+  // Añade nuevo propdcuto
   productManager.addProduct("Producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
   
-  // getProducts después de agregar un producto debe contener el producto agregado
+  //getProducts después de agregar un producto debe contener el producto agregado
   console.log("Productos después de agregar:", productManager.getProducts());
   
   // addProduct con los mismos campos, debe arrojar un error product manager con ejemplo repetido para que tire el error
   productManager.addProduct("Producto prueba", "Este es un producto prueba", 200, "Sin imagen", "abc123", 25);
   
-  // getProductById con un ID que no existe, debe arrojar un error Buscamos coin un id que no existe 
+  // Buscamos coin un id que no existe 
   productManager.getProductById(999);
   
   //getProductById con el ID del producto agregado, debe devolver el producto
